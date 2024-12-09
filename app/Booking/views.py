@@ -10,3 +10,4 @@ class PostListCreateView(ListCreateAPIView):
 class PostDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
+    lookup_field = 'booking_id'
